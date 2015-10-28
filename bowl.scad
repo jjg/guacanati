@@ -15,8 +15,9 @@ translate([0,5,0]){
         translate([-(pit*15)/2,-(pit*15)/2,pit*5]){
             cube([pit*15,pit*15,pit*5]);
         }
+        
         // hollow
-        translate([0,0,pit*6]){
+        translate([0,0,pit*6.1]){
             resize([pit*15,pit*15,pit*12]){
                 sphere(pit*5,$fn=(pit*10));
             }
